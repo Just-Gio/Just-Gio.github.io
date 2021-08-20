@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+  <title>JustGio's Socials</title>
+  <link rel="stylesheet" href="style/home_style.css">
+  <meta name="viewport" content="width=device-width">
+
+</head>
+<body>
+  
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <div class="dropdown">
+      <a href="blog.html">Blog &#9662</a>
+      <i class="fa fa-caret-down"></i>
+      <div class="dropdown-content">
+        <a  href="money.html">Money</a>
+        <a href="tech.html">Tech</a>
+        <a href="fitness.html">Fitness</a>
+        <a href="life.html">Life</a>
+      </div>
+    </div>
+    <a href="whoami.html">Who am I</a>
+    <a id = "current_page" href="followme.html">Follow me</a>
+
+  </div>
+
+  <div class="cover_image">
+    <h1 id="cover_image_label">Follow JustG.io</h1>
+  </div>
+
+  <div class = "divisor_line" >
+  </div>
+  
+  <div class = "divisor_label" id = "divisor_label_channel"><h2>My channel and socials</h2> </div>
+
+  <div class = "external_container" id = "external_container_social">
+    <div class = "external_box" id = "insta_big_box">
+      <h2>Instagram</h2>
+      <p>piccola descrizione dell'articolo.</p>
+      <button class = "external_button">read</button>
+    </div>
+        <div class = "external_box" id = "youtube_big_box">
+      <h2>Youtube</h2>
+      <p>piccola descrizione dell'articolo.</p>
+      <button class = "external_button">read</button>
+    </div>
+        <div class = "external_box" id = "telegram_big_box">
+      <h2>Telegram</h2>
+      <p>piccola descrizione dell'articolo.</p>
+      <button class = "external_button">read</button>
+    </div>
+  </div>
+
+  <div class = "divisor_label" id = "divisor_label_surfing"><h2>Keep surfing</h2> </div>
+
+  <div class = "external_container" id = "divisor_external">
+    <div class = "external_box">
+      <h2>Home</h2>
+      <p>piccola descrizione dell'articolo.</p>
+      <button class = "external_button">read</button>
+    </div>
+        <div class = "external_box">
+      <h2>Who am I</h2>
+      <p>piccola descrizione dell'articolo.</p>
+      <button class = "external_button">read</button>
+    </div>
+        <div class = "external_box">
+      <h2>Follow me </h2>
+      <p>piccola descrizione dell'articolo.</p>
+      <button class = "external_button">read</button>
+    </div>
+  </div>
+
+  <div class = "footer">
+    <h6>Copyright 2021 - This site is interly realized by me -> JustG.io</h6>
+  </div>
+
+</body>
+
+
+<script>
+var animateCoverImage = true;
+var animateSocialContainer = true;
+var animateSurfing = true;
+var animateWhere = true;
+var element;
+
+window.addEventListener("scroll", function() {
+
+  if(this.pageYOffset > 100){
+    if(animateCoverImage) {
+      element = document.querySelector(".cover_image");
+      element.classList.add("rotateElement");
+      animateCoverImage = false;
+    }
+  }
+
+  if(this.pageYOffset > 300){
+    if(animateSocialContainer) {
+      document.querySelector("#external_container_social").classList.add("rotateElement");
+      document.querySelector(".divisor_line").classList.add("rotateElement");
+      document.querySelector("#divisor_label_channel").classList.add("rotateElement");
+      animateSocialContainer = false;
+    }
+  }
+
+  if(this.pageYOffset > 400){
+      if(animateSurfing) {
+        document.querySelector("#divisor_label_surfing").classList.add("rotateElement");
+        document.querySelector("#divisor_external").classList.add("rotateElement");
+        animateSurfing = false;
+      }
+  }
+
+  if(window.screen.height <= 1024 && this.pageYOffset > 0){
+
+      if(animateCoverImage) {
+        element = document.querySelector(".cover_image");
+        element.classList.add("rotateElement");
+        animateCoverImage = false;
+      }
+      if(animateSocialContainer) {
+        document.querySelector("#external_container_social").classList.add("rotateElement");
+        document.querySelector(".divisor_line").classList.add("rotateElement");
+        document.querySelector("#divisor_label_channel").classList.add("rotateElement");
+        animateSocialContainer = false;
+    }
+      if(animateSurfing) {
+        document.querySelector("#divisor_label_surfing").classList.add("rotateElement");
+        document.querySelector("#divisor_external").classList.add("rotateElement");
+        animateSurfing = false;
+      }
+  }
+})
+
+  if(animateCoverImage && animateWhere && animateSurfing && window.screen.height < 760){
+      element = document.querySelector(".cover_image");
+      element.classList.add("rotateElement");
+      animateCoverImage = false;
+      document.querySelector("#external_container_social").classList.add("rotateElement");
+      document.querySelector(".divisor_line").classList.add("rotateElement");
+      document.querySelector("#divisor_label_channel").classList.add("rotateElement");
+      animateSocialContainer = false;    
+      document.querySelector("#divisor_label_surfing").classList.add("rotateElement");
+      document.querySelector("#divisor_external").classList.add("rotateElement");
+      animateSurfing = false;
+  }
+</script>
+
+</html>

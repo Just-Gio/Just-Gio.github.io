@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+  <title>Who is justGio</title>
+  <link rel="stylesheet" href="style/home_style.css">
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+  
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <div class="dropdown">
+      <a href="blog.html">Blog &#9662</a>
+      <i class="fa fa-caret-down"></i>
+      <div class="dropdown-content">
+        <a  href="money.html">Money</a>
+        <a href="tech.html">Tech</a>
+        <a href="fitness.html">Fitness</a>
+        <a href="life.html">Life</a>
+      </div>
+    </div>
+    <a id = "current_page" href="whoami.html">Who am I</a>
+    <a href="followme.html">Follow me</a>
+
+  </div>
+
+  <div class="cover_image">
+    <h1 id="cover_image_label">Who is JustG.io</h1>
+  </div>
+
+  <div class = "divisor_line" id = "divisor_line_description">
+  </div>
+  
+  <div class = "divisor_label" id = "divisor_label_description"><h2>A little description of me</h2> </div>
+
+  <div class = "description_container">
+   <div class = "description_image"></div>
+    <div class = "description">
+     <p>
+      Provo a scrivere due righe solo per vedere come viene, dovrei scrivere abbastanza in questo spazio. Quindi credo proprio che mi inventero` parole e 
+      continuero` a scrivere cose a caso. Anche perche` dovrei scrivere la mia vita in pochissime righe, il che non sara` semplice. Ma la vera domanda e`: sara` abbastanza interessante
+      la mia vita da intrattenere qualcuno? Io di certo non lo so, ma so di voler aprire questo sito, quindi non mi resta da fare altro che provare
+      <p>
+    </div>
+  </div>
+
+  <div class = "divisor_label" id = "divisor_label_surfing"><h2>Keep surfing</h2> </div>
+
+  <div class = "external_container">
+    <div class = "external_box">
+      <h2>Home</h2>
+      <p>piccola descrizione dell'articolo.</p>
+      <button class = "external_button">read</button>
+    </div>
+        <div class = "external_box">
+      <h2>Who am I</h2>
+      <p>piccola descrizione dell'articolo.</p>
+      <button class = "external_button">read</button>
+    </div>
+        <div class = "external_box">
+      <h2>Follow me</h2>
+      <p>piccola descrizione dell'articolo.</p>
+      <button class = "external_button">read</button>
+    </div>
+  </div>
+
+  <div class = "divisor_line" id = "divisor_line_where">
+  </div>
+
+ <div class = "divisor_label" id = "divisor_label_where"><h2>Where you can find me</h2> </div>
+
+  <div class = "final_container">
+    <div class = "final_box" id = "insta_box"></div>
+    <div class = "final_box" id = "youtube_box"></div>
+    <div class = "final_box" id = "telegram_box"></div>
+  </div>
+
+  <div class = "footer">
+    <h6>Copyright 2021 - This site is interly realized by me -> JustG.io</h6>
+  </div>
+
+</body>
+
+<script>
+var animateCoverImage = true;
+var animateDescriptionContainer = true;
+var animateSurfing = true;
+var animateWhere = true;
+var element;
+
+window.addEventListener("scroll", function() {
+
+  if(this.pageYOffset > 150){
+    if(animateCoverImage) {
+      element = document.querySelector(".cover_image");
+      element.classList.add("rotateElement");
+      animateCoverImage = false;
+    }
+  }
+
+  if(this.pageYOffset > 300){
+    if(animateDescriptionContainer) {
+      document.querySelector(".description_container").classList.add("rotateElement");
+      document.querySelector("#divisor_line_description").classList.add("rotateElement");
+      document.querySelector("#divisor_label_description").classList.add("rotateElement");
+      animateDescriptionContainer = false;
+    }
+  }
+
+    if(this.pageYOffset > 600){
+      if(animateSurfing) {
+        document.querySelector("#divisor_label_surfing").classList.add("rotateElement");
+        document.querySelector(".external_container").classList.add("rotateElement");
+        animateSurfing = false;
+      }
+  }
+
+    if(this.pageYOffset > 700){
+      if(animateWhere) {
+        document.querySelector("#divisor_label_where").classList.add("rotateElement");
+        document.querySelector("#divisor_line_where").classList.add("rotateElement");
+        document.querySelector(".final_container").classList.add("rotateElement");
+        animateWhere = false;
+      }
+    }  
+
+    if(this.pageYOffset > 200 && animateWhere && animateSurfing && window.screen.height <= 1400){
+        document.querySelector("#divisor_label_where").classList.add("rotateElement");
+        document.querySelector("#divisor_line_where").classList.add("rotateElement");
+        document.querySelector(".final_container").classList.add("rotateElement");
+        animateWhere = false;
+        document.querySelector("#divisor_label_surfing").classList.add("rotateElement");
+        document.querySelector(".external_container").classList.add("rotateElement");
+        animateSurfing = false;
+        document.querySelector(".description_container").classList.add("rotateElement");
+        document.querySelector("#divisor_line_description").classList.add("rotateElement");
+        document.querySelector("#divisor_label_description").classList.add("rotateElement");
+        animateDescriptionContainer = false;
+    }
+
+})
+    if(animateWhere && animateSurfing && window.screen.height < 670){
+        element = document.querySelector(".cover_image");
+        element.classList.add("rotateElement");
+        animateCoverImage = false;
+        document.querySelector("#divisor_label_where").classList.add("rotateElement");
+        document.querySelector("#divisor_line_where").classList.add("rotateElement");
+        document.querySelector(".final_container").classList.add("rotateElement");
+        animateWhere = false;
+        document.querySelector("#divisor_label_surfing").classList.add("rotateElement");
+        document.querySelector(".external_container").classList.add("rotateElement");
+        animateSurfing = false;
+        document.querySelector(".description_container").classList.add("rotateElement");
+        document.querySelector("#divisor_line_description").classList.add("rotateElement");
+        document.querySelector("#divisor_label_description").classList.add("rotateElement");
+        animateDescriptionContainer = false;
+    }
+</script>
+
+</html>

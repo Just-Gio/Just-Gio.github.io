@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+  <title>Money</title>
+  <link rel="stylesheet" href="style/home_style.css">
+  <meta name="viewport" content="width=device-width">
+
+</head>
+<body>
+  
+  <div class="navbar">
+    <a href="home.html">Home</a>
+    <div class="dropdown">
+      <a  id = "current_page" href="blog.html">Blog &#9662</a>
+      <i class="fa fa-caret-down"></i>
+      <div class="dropdown-content">
+        <a  id = "current_page" href="money.html">Money</a>
+        <a href="tech.html">Tech</a>
+        <a href="fitness.html">Fitness</a>
+        <a href="life.html">Life</a>
+      </div>
+    </div>
+    <a href="whoami.html">Who am I</a>
+    <a href="followme.html">Follow me</a>
+
+  </div>
+
+  <div class="cover_image">
+    <h1 id="cover_image_label">Let's talk about money</h1>
+  </div>
+
+  <div class = "divisor_line" id = "divisor_line_money" >
+  </div>
+  
+  <div class = "divisor_label" id = "divisor_label_description"><h2>What I'm talking about</h2> </div>
+
+
+  <div class = "description_container">
+   <div class = "description_image"></div>
+    <div class = "description">
+     <p>
+      Provo a scrivere due righe solo per vedere come viene, dovrei scrivere abbastanza in questo spazio. Quindi credo proprio che mi inventero` parole e 
+      continuero` a scrivere cose a caso. Anche perche` dovrei scrivere la mia vita in pochissime righe, il che non sara` semplice. Ma la vera domanda e`: sara` abbastanza interessante
+      la mia vita da intrattenere qualcuno? Io di certo non lo so, ma so di voler aprire questo sito, quindi non mi resta da fare altro che provare
+      <p>
+    </div>
+  </div>
+
+  <div class = "divisor_label" id = "divisor_label_articles"><h2>Articles</h2> </div>
+
+
+  <div class = "big_article_box">
+    <div class = "big_article_image">
+    </div>
+    <div class = "big_article">
+      <h3>Article Title</h3>
+      <p>Descrizione di prova del blog. Qui potrei dire cosa scrivo nel blog e al fianco potrei inserire un'immagine stondata, poi qui sotto metto il link per andare sul blog!<p>
+      <button class = "article_button">read</button>
+    </div>
+  </div>
+
+  <div class = "big_article_box">
+    <div class = "big_article_left">
+      <h3>Article Title</h3>
+      <p>Descrizione di prova del blog. Qui potrei dire cosa scrivo nel blog e al fianco potrei inserire un'immagine stondata, poi qui sotto metto il link per andare sul blog!<p>
+      <button class = "article_button">read</button>
+    </div>
+    <div class = "big_article_image_right">
+    </div>
+  </div>
+
+  <div class = "big_article_box">
+    <div class = "big_article_image">
+    </div>
+    <div class = "big_article">
+      <h3>Article Title</h3>
+      <p>Descrizione di prova del blog. Qui potrei dire cosa scrivo nel blog e al fianco potrei inserire un'immagine stondata, poi qui sotto metto il link per andare sul blog!<p>
+      <button class = "article_button">read</button>
+    </div>
+  </div>
+
+
+
+  <div class = "footer">
+    <h6>Copyright 2021 - This site is interly realized by me -> JustG.io</h6>
+  </div>
+
+</body>
+
+
+<script>
+var animateCoverImage = true;
+var element;
+var animateDescriptionContainer = true;
+window.addEventListener("scroll", function() {
+
+  if(this.pageYOffset > 100){
+    if(animateCoverImage) {
+      element = document.querySelector(".cover_image");
+      element.classList.add("rotateElement");
+      animateCoverImage = false;
+    }
+  }
+
+
+  if(this.pageYOffset > 120){
+    if(animateDescriptionContainer) {
+      document.querySelector(".description_container").classList.add("rotateElement");
+      document.querySelector("#divisor_line_money").classList.add("rotateElement");
+      document.querySelector("#divisor_label_description").classList.add("rotateElement");
+      animateDescriptionContainer = false;
+    }
+  }
+})
+</script>
+
+</html>

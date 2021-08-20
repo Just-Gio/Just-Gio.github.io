@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+  <title>Home</title>
+  <link rel="stylesheet" href="style/home_style.css">
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+  <div class="navbar">
+    <a  id = "current_page" href="home.html">Home</a>
+    <div class="dropdown">
+      <a href="blog.html">Blog &#9662</a>
+      <i class="fa fa-caret-down"></i>
+      <div class="dropdown-content">
+        <a  href="money.html">Money</a>
+        <a href="tech.html">Tech</a>
+        <a href="fitness.html">Fitness</a>
+        <a href="life.html">Life</a>
+      </div>
+    </div>
+    <a href="whoami.html">Who am I</a>
+    <a href="followme.html">Follow me</a>
+
+  </div>
+
+  <div class="cover_image">
+    <h1 id="cover_image_label">JustG.io</h1>
+  </div>
+
+  <div class = "divisor_line" id = "divisor_line_content">
+  </div>
+  
+  <div class = "divisor_label" id = "divisor_label_content"><h2>My last content</h2> </div>
+
+
+  <div class= "box_container">
+    <div class = "content_box">
+      <div class = "content_image_box"></div>
+      <p>Prova di una piccola descrizione di un aticolo o video appena pubblicato sul sito</p>
+      <button class = "content_button"> Watch </button>
+    </div>
+
+    <div class = "content_box">
+      <div class = "content_image_box"></div>
+      <p>Prova di una piccola descrizione di un aticolo o video appena pubblicato sul sito</p>
+      <button class = "content_button"> Watch </button>
+    </div>
+
+    <div class = "content_box">
+      <div class = "content_image_box"></div>
+      <p>Prova di una piccola descrizione di un aticolo o video appena pubblicato sul sito</p>
+      <button class = "content_button"> Watch </button>
+    </div>
+  </div>
+
+  <div class = "divisor_label" id = "divisor_label_surfing"><h2>Keep Surfing</h2> </div>
+
+  <div class = "surfing_box" id = "surfing_box_blog">
+    <div class = "surfing_image">
+    </div>
+    <div class = "surfing_article">
+      <p>Descrizione di prova del blog. Qui potrei dire cosa scrivo nel blog e al fianco potrei inserire un'immagine stondata, poi qui sotto metto il link per andare sul blog!<p>
+      <button class = "surfing_button">BLOG</button>
+    </div>
+  </div>
+
+  <div class = "surfing_box" id = "surfing_box_who">
+    <div class = "surfing_article_left">
+      <p>Descrizione di prova del blog. Qui potrei dire cosa scrivo nel blog e al fianco potrei inserire un'immagine stondata, poi qui sotto metto il link per andare sul blog!<p>
+      <button class = "surfing_button">Who am I</button>
+    </div>
+    <div class = "surfing_image_right">
+    </div>
+  </div>
+
+  <div class = "surfing_box" id = "surfing_box_follow">
+    <div class = "surfing_image">
+    </div>
+    <div class = "surfing_article">
+      <p>Descrizione di prova del blog. Qui potrei dire cosa scrivo nel blog e al fianco potrei inserire un'immagine stondata, poi qui sotto metto il link per andare sul blog!<p>
+      <button class = "surfing_button">Follow me</button>
+    </div>
+  </div>
+  
+  <div class = "divisor_line" id = "divisor_line_where">
+  </div>
+    
+ <div class = "divisor_label" id = "divisor_label_where"><h2>Where you can find me</h2> </div>
+
+  <div class = "final_container">
+    <div class = "final_box" id = "insta_box"></div>
+    <div class = "final_box" id = "youtube_box"></div>
+    <div class = "final_box" id = "telegram_box"></div>
+  </div>
+
+  <div class = "footer">
+    <h6>Copyright 2021 - This site is interly realized by me -> JustG.io</h6>
+  </div>
+
+</body>
+
+
+
+<script>
+var animateCoverImage = true;
+var animateBoxContainer = true;
+var animateSurfing = true;
+var animateWhere = true;
+var element;
+
+window.addEventListener("scroll", function() {
+
+  if(this.pageYOffset > 150){
+    if(animateCoverImage) {
+      element = document.querySelector(".cover_image");
+      element.classList.add("rotateElement");
+      animateCoverImage = false;
+    }
+  }
+
+  if(this.pageYOffset > 300){
+    if(animateBoxContainer) {
+      document.querySelector(".box_container").classList.add("rotateElement");
+      document.querySelector("#divisor_label_content").classList.add("rotateElement");
+      document.querySelector("#divisor_line_content").classList.add("rotateElement");
+      animateBoxContainer = false;
+    }
+  }
+
+    if(this.pageYOffset > 600){
+      if(animateSurfing) {
+        document.querySelector("#divisor_label_surfing").classList.add("rotateElement");
+        document.querySelector("#surfing_box_blog").classList.add("rotateElement");
+        document.querySelector("#surfing_box_who").classList.add("rotateElement");
+        document.querySelector("#surfing_box_follow").classList.add("rotateElement");
+        animateSurfing = false;
+      }
+  }
+
+  
+    if(this.pageYOffset > 1000 && window.screen.height >= 1080){
+      if(animateWhere) {
+        document.querySelector("#divisor_label_where").classList.add("rotateElement");
+        document.querySelector("#divisor_line_where").classList.add("rotateElement");
+        document.querySelector(".final_container").classList.add("rotateElement");
+        animateWhere = false;
+      }
+    }  else if(this.pageYOffset > 850 && window.screen.height >= 900) {
+        if(animateWhere) {
+           document.querySelector("#divisor_label_where").classList.add("rotateElement");
+           document.querySelector("#divisor_line_where").classList.add("rotateElement");
+           document.querySelector(".final_container").classList.add("rotateElement");
+           animateWhere = false;
+      }
+    }  else if(this.pageYOffset > 1450 && window.screen.height >= 760) {
+        if(animateWhere) {
+           document.querySelector("#divisor_label_where").classList.add("rotateElement");
+           document.querySelector("#divisor_line_where").classList.add("rotateElement");
+           document.querySelector(".final_container").classList.add("rotateElement");
+           animateWhere = false;
+      }
+    }
+
+    if(window.screen.height < 760 && this.pageYOffset > 0 ){
+      if(animateCoverImage) {
+        element = document.querySelector(".cover_image");
+        element.classList.add("rotateElement");
+        animateCoverImage = false;
+       }
+      if(animateBoxContainer) {
+        document.querySelector(".box_container").classList.add("rotateElement");
+        document.querySelector("#divisor_label_content").classList.add("rotateElement");
+        document.querySelector("#divisor_line_content").classList.add("rotateElement");
+        animateBoxContainer = false;
+      }
+      if(animateSurfing) {
+        document.querySelector("#divisor_label_surfing").classList.add("rotateElement");
+        document.querySelector("#surfing_box_blog").classList.add("rotateElement");
+        document.querySelector("#surfing_box_who").classList.add("rotateElement");
+        document.querySelector("#surfing_box_follow").classList.add("rotateElement");
+        animateSurfing = false;
+      }
+      if(animateWhere) {
+        document.querySelector("#divisor_label_where").classList.add("rotateElement");
+        document.querySelector("#divisor_line_where").classList.add("rotateElement");
+        document.querySelector(".final_container").classList.add("rotateElement");
+        animateWhere = false;
+      }
+    }
+
+})
+</script>
+
+
+
+</html>
