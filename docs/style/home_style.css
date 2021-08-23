@@ -298,6 +298,11 @@ li{
   margin-right: 50px;
 }
 
+.categories_button:hover {
+  background-image: linear-gradient(90deg, rgba(33, 37, 41, 0.123) 0%, #9292921f 74%);
+  border-radius: 15%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
 
 #divisor_label_articles {
   transform: rotate(0deg);
