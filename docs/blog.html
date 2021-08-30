@@ -142,23 +142,23 @@
   <div class = "external_container">
     <div class = "external_box">
       <h2>Home</h2>
-      <p>piccola descrizione dell'articolo.</p>
-      <button class = "external_button">read</button>
+      <p>The index page of this website.</p>
+       <a href="index.html"><button class = "external_button">Go!</button></a>
     </div>
         <div class = "external_box">
       <h2>Who am I</h2>
-      <p>piccola descrizione dell'articolo.</p>
-      <button class = "external_button">read</button>
+      <p>Here you can read who I am.</p>
+      <a href="whoami.html"><button class = "external_button">Go!</button></a>
     </div>
         <div class = "external_box">
       <h2>Follow me </h2>
-      <p>piccola descrizione dell'articolo.</p>
-      <button class = "external_button">read</button>
+      <p>All the links related to my channels.</p>
+      <a href="followme.html"><button class = "external_button">Go!</button></a>
     </div>
   </div>
 
   <div class = "footer">
-    <h6>Copyright 2021 - This site is interly realized by me -> JustG.io</h6>
+    <h6>Copyright 2021 - This site is interly realized by me -> Just-G.io</h6>
   </div>
 
 </body>
@@ -172,6 +172,12 @@ var animateFitness= true;
 var animateLife= true;
 var animateExternal = true;
 var element;
+if(window.screen.height < 850){
+    document.querySelector(".box_container").classList.add("rotateElement");
+    document.querySelector("#divisor_label_content").classList.add("rotateElement");
+    document.querySelector("#divisor_line_content").classList.add("rotateElement");
+    animateBoxContainer = false;
+}
 
 window.addEventListener("scroll", function() {
 

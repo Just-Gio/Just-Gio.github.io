@@ -5,7 +5,7 @@
 
   <title>Home</title>
   <link rel="stylesheet" href="style/home_style.css">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 
@@ -27,7 +27,9 @@
   </div>
 
   <div class="cover_image">
-    <h1 id="cover_image_label">JustG.io</h1>
+
+    
+    <h1 id="cover_image_label">Just-G.io</h1>
   </div>
 
   <div class = "divisor_line" id = "divisor_line_content">
@@ -37,20 +39,20 @@
 
 
   <div class= "box_container">
-    <div class = "content_box">
+    <div class = "content_box" id = "first_content">
       <div class = "content_image_box"></div>
       <p>Prova di una piccola descrizione di un aticolo o video appena pubblicato sul sito</p>
       <button class = "content_button"> Watch </button>
     </div>
 
     <div class = "content_box">
-      <div class = "content_image_box"></div>
+      <div class = "content_image_box" id = "second_content"></div>
       <p>Prova di una piccola descrizione di un aticolo o video appena pubblicato sul sito</p>
       <button class = "content_button"> Watch </button>
     </div>
 
     <div class = "content_box">
-      <div class = "content_image_box"></div>
+      <div class = "content_image_box" id = "third_content"></div>
       <p>Prova di una piccola descrizione di un aticolo o video appena pubblicato sul sito</p>
       <button class = "content_button"> Watch </button>
     </div>
@@ -62,15 +64,15 @@
     <div class = "surfing_image">
     </div>
     <div class = "surfing_article">
-      <p>Here is where you can read my articles and my misadventures, there are 4 categories of articles: Money, Tech, Fitness, Life.<p>
-      <button class = "surfing_button">BLOG</button>
+      <p>Here you can read my articles and my misadventures, there are 4 categories of articles: <b>Money</b>, <b>Tech</b>, <b>Fitness</b> and <b>Life</b>.<p>
+      <a href="blog.html"><button class = "surfing_button">Blog</button></a>
     </div>
   </div>
 
   <div class = "surfing_box" id = "surfing_box_who">
     <div class = "surfing_article_left">
       <p>Here you can read who I am, what I do in my life and why I started this website!<p>
-      <button class = "surfing_button">Who am I</button>
+      <a href="whoami.html"><button class = "surfing_button"> Who am I</button></a>
     </div>
     <div class = "surfing_image_right">
     </div>
@@ -81,7 +83,7 @@
     </div>
     <div class = "surfing_article">
       <p>Here you can find all the links related to my youtube channel and my social networks, if you find me interested enough I invite you to follow me on all my channels!<p>
-      <button class = "surfing_button">Follow me</button>
+       <a href="followme.html"><button class = "surfing_button">Follow me</button></a>
     </div>
   </div>
   
@@ -91,13 +93,13 @@
  <div class = "divisor_label" id = "divisor_label_where"><h2>Where you can find me</h2> </div>
 
   <div class = "final_container">
-    <div class = "final_box" id = "insta_box"></div>
-    <div class = "final_box" id = "youtube_box"></div>
-    <div class = "final_box" id = "telegram_box"></div>
+    <a target="_blak" href="https://www.instagram.com/just_g.io/"><div class = "final_box" id = "insta_box"></div></a>
+    <a target="_blak" href="https://www.youtube.com/channel/UCn_9pgb-OehsLYkVyBpWmxA"><div class = "final_box" id = "youtube_box"></div></a>  
+    <a target="_blak" href="https://t.me/just_gio_channel"><div class = "final_box" id = "telegram_box"></div></a>
   </div>
 
   <div class = "footer">
-    <h6>Copyright 2021 - This site is interly realized by me -> JustG.io</h6>
+    <h6>Copyright 2021 - This site is interly realized by me -> Just-G.io</h6>
   </div>
 
 </body>
@@ -111,7 +113,24 @@ var animateSurfing = true;
 var animateWhere = true;
 var element;
 
+if(window.screen.width < 850){
+    document.querySelector(".box_container").classList.add("rotateElement");
+    document.querySelector("#divisor_label_content").classList.add("rotateElement");
+    document.querySelector("#divisor_line_content").classList.add("rotateElement");
+    animateBoxContainer = false;
+    document.querySelector("#divisor_label_surfing").classList.add("rotateElement");
+    document.querySelector("#surfing_box_blog").classList.add("rotateElement");
+    document.querySelector("#surfing_box_who").classList.add("rotateElement");
+    document.querySelector("#surfing_box_follow").classList.add("rotateElement");
+    animateSurfing = false;
+    document.querySelector("#divisor_label_where").classList.add("rotateElement");
+    document.querySelector("#divisor_line_where").classList.add("rotateElement");
+    document.querySelector(".final_container").classList.add("rotateElement");
+    animateWhere = false;
+  }
+
 window.addEventListener("scroll", function() {
+  
 
   if(this.pageYOffset > 150){
     if(animateCoverImage) {
@@ -169,27 +188,10 @@ window.addEventListener("scroll", function() {
         element = document.querySelector(".cover_image");
         element.classList.add("rotateElement");
         animateCoverImage = false;
-       }
-      if(animateBoxContainer) {
-        document.querySelector(".box_container").classList.add("rotateElement");
-        document.querySelector("#divisor_label_content").classList.add("rotateElement");
-        document.querySelector("#divisor_line_content").classList.add("rotateElement");
-        animateBoxContainer = false;
       }
-      if(animateSurfing) {
-        document.querySelector("#divisor_label_surfing").classList.add("rotateElement");
-        document.querySelector("#surfing_box_blog").classList.add("rotateElement");
-        document.querySelector("#surfing_box_who").classList.add("rotateElement");
-        document.querySelector("#surfing_box_follow").classList.add("rotateElement");
-        animateSurfing = false;
-      }
-      if(animateWhere) {
-        document.querySelector("#divisor_label_where").classList.add("rotateElement");
-        document.querySelector("#divisor_line_where").classList.add("rotateElement");
-        document.querySelector(".final_container").classList.add("rotateElement");
-        animateWhere = false;
-      }
+    
     }
+
 
 })
 </script>
