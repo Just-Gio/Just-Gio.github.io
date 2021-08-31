@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width">
 </head>
 <body>
-  
+
   <div class="navbar">
     <a href="index.html">Home</a>
     <div class="dropdown">
@@ -32,7 +32,7 @@
 
   <div class = "divisor_line" id = "divisor_line_content">
   </div>
-  
+
   <div class = "divisor_label" id = "divisor_label_content"><h2>My last articles</h2> </div>
 
 
@@ -75,7 +75,7 @@
       <button class = "article_button">read</button>
     </div>
   </div>
-    
+
   <div class = "divisor_label" id = "divisor_label_tech"><a class="categories_button" href = "tech.html">Tech</a></div>
 
   <div class = "article_container" id = "tech_container">
@@ -206,14 +206,14 @@ window.addEventListener("scroll", function() {
       }
   }
 
-  
+
     if(this.pageYOffset > 1000){
       if(animateTech) {
         document.querySelector("#divisor_label_tech").classList.add("rotateElement");
         document.querySelector("#tech_container").classList.add("rotateElement");
         animateTech = false;
       }
-    }  
+    }
 
     if(this.pageYOffset > 1300){
       if(animateFitness) {
@@ -221,7 +221,7 @@ window.addEventListener("scroll", function() {
         document.querySelector("#fitness_container").classList.add("rotateElement");
         animateFitness = false;
       }
-    }  
+    }
 
     if(this.pageYOffset > 1500){
       if(animateLife) {
@@ -229,7 +229,7 @@ window.addEventListener("scroll", function() {
         document.querySelector("#life_container").classList.add("rotateElement");
         animateLife = false;
       }
-    }  
+    }
 
     if(this.pageYOffset > 1800 && window.screen.height >= 1080){
       if(animateExternal) {
@@ -242,7 +242,7 @@ window.addEventListener("scroll", function() {
               document.querySelector(".external_container").classList.add("rotateElement");
               document.querySelector("#divisor_label_surfing").classList.add("rotateElement");
               animateExternal = false;
-            } 
+            }
     } else if(this.pageYOffset > 1100 && window.screen.height < 750) {
             if(animateLife) {
              document.querySelector("#divisor_label_life").classList.add("rotateElement");
@@ -253,13 +253,13 @@ window.addEventListener("scroll", function() {
               document.querySelector(".external_container").classList.add("rotateElement");
               document.querySelector("#divisor_label_surfing").classList.add("rotateElement");
               animateExternal = false;
-            } 
+            }
             if(animateFitness) {
               document.querySelector("#divisor_label_fitness").classList.add("rotateElement");
               document.querySelector("#fitness_container").classList.add("rotateElement");
               animateFitness = false;
             }
-    }      
+    }
 
 })
 </script>

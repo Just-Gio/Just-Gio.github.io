@@ -5,6 +5,13 @@ body {
  width:95%;
 }
 
+h1{
+  font-size: 35pt;
+}
+
+h2{
+  font-size: 24pt;
+}
 div{
   font-family: Sitka Subheading;
 }
@@ -29,7 +36,7 @@ button:hover {
 .navbar {
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   overflow: hidden;
   background-color: none;
   color: rgb(33, 37,41);
@@ -61,7 +68,7 @@ button:hover {
   background-color: #30353a1c;
   background-image: linear-gradient(180deg, rgba(33, 37, 41, 0.123) 0%, #9292921f 74%);
   border-radius: 10%;
-} 
+}
 
 /* The dropdown container */
 .dropdown {
@@ -132,13 +139,12 @@ li{
 .cover_image {
   transform: rotate(7deg);
   margin-top: 20px;
-  margin-left: 3%;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 450px;
-  width: 95%; 
+  width: 95%;
 }
 
 #cover_image_img{
@@ -171,7 +177,7 @@ li{
   transform: rotate(7deg);
   display: flex;
   justify-content: center;
-  align-items: center;  
+  align-items: center;
   margin-left: 35%;
   margin-top: 30px;
   border-style: none;
@@ -197,7 +203,6 @@ li{
 }
 
 .content_box{
-  margin-left: 25px;
   text-align: center;
   justify-content: center;
   border-style: solid;
@@ -232,7 +237,7 @@ li{
 
 .content_button{
   display: inline-flex;
-  align-items: center; 
+  align-items: center;
   height: 25px;
   margin-bottom: 10px;
 }
@@ -471,12 +476,11 @@ li{
 .final_container{
   transform: rotate(7deg);
   margin-top: 30px;
-  margin-right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  height: 120px;
+  width: 93%;
+  height: 300px;
   color: rgb(33, 37,41);
 }
 
@@ -595,7 +599,7 @@ li{
     margin-bottom: 30px;
   }
   .external_container{
-    
+
     height: 150px;
     margin-top: 1px;
   }
@@ -610,13 +614,13 @@ li{
   #insta_big_box {
     background-image: url("icons/insta.png");
     background-repeat: no-repeat;
-  
+
   }
   #youtube_big_box {
     background-image: url("icons/youtube.png");
     background-repeat: no-repeat;
   }
-  
+
   #telegram_big_box {
     background-image: url("icons/telegram.png");
     background-repeat: no-repeat;

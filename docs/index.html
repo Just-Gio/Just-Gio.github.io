@@ -28,13 +28,13 @@
 
   <div class="cover_image">
 
-    
+
     <h1 id="cover_image_label">Just-G.io</h1>
   </div>
 
   <div class = "divisor_line" id = "divisor_line_content">
   </div>
-  
+
   <div class = "divisor_label" id = "divisor_label_content"><h2>My last content</h2> </div>
 
 
@@ -86,15 +86,15 @@
        <a href="followme.html"><button class = "surfing_button">Follow me</button></a>
     </div>
   </div>
-  
+
   <div class = "divisor_line" id = "divisor_line_where">
   </div>
-    
+
  <div class = "divisor_label" id = "divisor_label_where"><h2>Where you can find me</h2> </div>
 
   <div class = "final_container">
     <a target="_blak" href="https://www.instagram.com/just_g.io/"><div class = "final_box" id = "insta_box"></div></a>
-    <a target="_blak" href="https://www.youtube.com/channel/UCn_9pgb-OehsLYkVyBpWmxA"><div class = "final_box" id = "youtube_box"></div></a>  
+    <a target="_blak" href="https://www.youtube.com/channel/UCn_9pgb-OehsLYkVyBpWmxA"><div class = "final_box" id = "youtube_box"></div></a>
     <a target="_blak" href="https://t.me/just_gio_channel"><div class = "final_box" id = "telegram_box"></div></a>
   </div>
 
@@ -130,69 +130,41 @@ if(window.screen.width < 850){
   }
 
 window.addEventListener("scroll", function() {
-  
 
-  if(this.pageYOffset > 150){
-    if(animateCoverImage) {
+
+  if(animateCoverImage && this.pageYOffset > 150){
       element = document.querySelector(".cover_image");
       element.classList.add("rotateElement");
       animateCoverImage = false;
-    }
   }
 
-  if(this.pageYOffset > 300){
-    if(animateBoxContainer) {
+  if(animateBoxContainer && this.pageYOffset > 300){
       document.querySelector(".box_container").classList.add("rotateElement");
       document.querySelector("#divisor_label_content").classList.add("rotateElement");
       document.querySelector("#divisor_line_content").classList.add("rotateElement");
       animateBoxContainer = false;
-    }
   }
 
-    if(this.pageYOffset > 600){
-      if(animateSurfing) {
-        document.querySelector("#divisor_label_surfing").classList.add("rotateElement");
-        document.querySelector("#surfing_box_blog").classList.add("rotateElement");
-        document.querySelector("#surfing_box_who").classList.add("rotateElement");
-        document.querySelector("#surfing_box_follow").classList.add("rotateElement");
-        animateSurfing = false;
-      }
+    if(animateSurfing && this.pageYOffset > 600){
+      document.querySelector("#divisor_label_surfing").classList.add("rotateElement");
+      document.querySelector("#surfing_box_blog").classList.add("rotateElement");
+      document.querySelector("#surfing_box_who").classList.add("rotateElement");
+      document.querySelector("#surfing_box_follow").classList.add("rotateElement");
+      animateSurfing = false;
   }
 
-  
-    if(this.pageYOffset > 1000 && window.screen.height >= 1080){
-      if(animateWhere) {
-        document.querySelector("#divisor_label_where").classList.add("rotateElement");
-        document.querySelector("#divisor_line_where").classList.add("rotateElement");
-        document.querySelector(".final_container").classList.add("rotateElement");
-        animateWhere = false;
-      }
-    }  else if(this.pageYOffset > 850 && window.screen.height >= 900) {
-        if(animateWhere) {
-           document.querySelector("#divisor_label_where").classList.add("rotateElement");
-           document.querySelector("#divisor_line_where").classList.add("rotateElement");
-           document.querySelector(".final_container").classList.add("rotateElement");
-           animateWhere = false;
-      }
-    }  else if(this.pageYOffset > 1450 && window.screen.height >= 760) {
-        if(animateWhere) {
-           document.querySelector("#divisor_label_where").classList.add("rotateElement");
-           document.querySelector("#divisor_line_where").classList.add("rotateElement");
-           document.querySelector(".final_container").classList.add("rotateElement");
-           animateWhere = false;
-      }
+  if(animateWhere && this.pageYOffset > 600) {
+       document.querySelector("#divisor_label_where").classList.add("rotateElement");
+       document.querySelector("#divisor_line_where").classList.add("rotateElement");
+       document.querySelector(".final_container").classList.add("rotateElement");
+       animateWhere = false;
     }
 
-    if(window.screen.height < 760 && this.pageYOffset > 0 ){
-      if(animateCoverImage) {
-        element = document.querySelector(".cover_image");
-        element.classList.add("rotateElement");
-        animateCoverImage = false;
-      }
-    
+    if(animateCoverImage && window.screen.height < 760 && this.pageYOffset > 0 ){
+      element = document.querySelector(".cover_image");
+      element.classList.add("rotateElement");
+      animateCoverImage = false;
     }
-
-
 })
 </script>
 
