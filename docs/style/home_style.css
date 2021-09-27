@@ -272,10 +272,11 @@ li{
 .surfing_image{
   height: 200px;
   width: 200px;
+  text-align: center;
+  justify-content: center;
   border-style: solid;
   border-width: none;
   border-color: rgb(33, 37,41);
-  background-color: none;
   border-radius: 40%;
 }
 
@@ -285,7 +286,6 @@ li{
   border-style: solid;
   border-width: none;
   border-color: rgb(33, 37,41);
-  background-color: none;
   border-radius: 40%;
 }
 
@@ -393,7 +393,30 @@ li{
 }
 
 
-
+#blog_image{
+  background-image: url("images/blog.png");
+  background-repeat: no-repeat;
+  justify-content: center;
+  border-style: solid;
+  height: 200px;
+  width: 200px;
+}
+#whoami_image{
+  background-image: url("images/whois.png");
+  background-repeat: no-repeat;
+  justify-content: center;
+  border-style: solid;
+  height: 200px;
+  width: 200px;
+}
+#link_image{
+  background-image: url("images/link.png");
+  background-repeat: no-repeat;
+  
+  background-position: center;
+  height: 200px;
+  width: 200px;
+}
 .article_container{
   transform: rotate(7deg);
   margin-top: 30px;
