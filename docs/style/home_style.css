@@ -477,11 +477,11 @@ li{
 
 .final_container{
   transform: rotate(7deg);
-  margin-top: 30px;
+  margin-top: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 93%;
+  width: 100%;
   height: 300px;
   color: rgb(33, 37,41);
 }
