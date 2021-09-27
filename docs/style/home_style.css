@@ -472,7 +472,6 @@ li{
 .final_container{
   transform: rotate(7deg);
   margin-top: 30px;
-  margin-right: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
