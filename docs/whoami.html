@@ -8,7 +8,7 @@
   <meta name="viewport" content="width=device-width">
 </head>
 <body>
-  
+
   <div class="navbar">
     <a href="index.html">Home</a>
     <div class="dropdown">
@@ -27,13 +27,13 @@
   </div>
 
   <div class="cover_image">
-    
-    <h1 id="cover_image_label">Who is JustG.io</h1>
+
+    <h1 id="cover_image_label">Who is Just-G.io</h1>
   </div>
 
   <div class = "divisor_line" id = "divisor_line_description">
   </div>
-  
+
   <div class = "divisor_label" id = "divisor_label_description"><h2>A little description of me</h2> </div>
 
   <div class = "description_container">
@@ -74,7 +74,7 @@
 
   <div class = "final_container">
    <a target="_blak" href="https://www.instagram.com/just_g.io/"><div class = "final_box" id = "insta_box"></div></a>
-    <a target="_blak" href="https://www.youtube.com/channel/UCn_9pgb-OehsLYkVyBpWmxA"><div class = "final_box" id = "youtube_box"></div></a>  
+    <a target="_blak" href="https://www.youtube.com/channel/UCn_9pgb-OehsLYkVyBpWmxA"><div class = "final_box" id = "youtube_box"></div></a>
     <a target="_blak" href="https://t.me/just_gio_channel"><div class = "final_box" id = "telegram_box"></div></a>
 
   </div>
@@ -87,6 +87,7 @@
 
 <script>
 var animateCoverImage = true;
+
 var animateDescriptionContainer = true;
 var animateSurfing = true;
 var animateWhere = true;
@@ -126,7 +127,7 @@ window.addEventListener("scroll", function() {
         document.querySelector(".final_container").classList.add("rotateElement");
         animateWhere = false;
       }
-    }  
+    }
 
     if(this.pageYOffset > 200 && animateWhere && animateSurfing && window.screen.height <= 1400){
         document.querySelector("#divisor_label_where").classList.add("rotateElement");
