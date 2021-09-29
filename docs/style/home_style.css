@@ -39,6 +39,7 @@ button:hover {
   align-items: center;
   overflow: hidden;
   background-color: none;
+  width: 100%;
   color: rgb(33, 37,41);
 }
 
@@ -144,7 +145,7 @@ li{
   align-items: center;
   text-align: center;
   height: 450px;
-  width: 95%;
+  width: 100%;
 }
 
 #cover_image_img{
@@ -176,12 +177,12 @@ li{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 30%;
+  text-align: center;
   margin-top: 30px;
   border-style: none;
   border-color: none;
   border-width: none;
-  width: 42%;
+  width: 100%;
   height: 23px;
   color: rgb(33, 37,41);
 }
@@ -251,11 +252,9 @@ li{
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  width: 104%;
+  width: 100%;
   height: 300px;
   border-style: none;
-  border-width: none;
-  border-color: none;
   background-color: none;
 }
 
@@ -328,7 +327,7 @@ li{
   justify-content: center;
   align-items: center;
   margin-top: 30px;
-  width: 104%;
+  width: 100%;
   height: 300px;
   border-style: none;
   border-width: none;
@@ -471,8 +470,8 @@ li{
 }
 
 .external_box{
-  margin-left: 25px;
   text-align: center;
+  margin-left: 5px;
   justify-content: center;
   border-style: solid;
   border-width: 2px;
@@ -573,6 +572,7 @@ li{
   transform: rotate(0deg);
 }
 
+
 @media  (min-width: 761px) {
   #second_content{
     margin-right: 25px;
@@ -583,7 +583,48 @@ li{
 
 
 @media  (max-width: 760px) {
-  
+  html{
+    width: 95%;
+  }
+  *, *:before, *:after {
+  box-sizing: border-box;
+}
+ body{
+   width: 100px;
+ }
+ .navbar a{
+   font-size: 10pt;
+ }
+  .cover_image {
+    transform: rotate(0deg);
+  }
+  .divisor_line{
+    transform: rotate(0deg);
+  }
+  .divisor_label{
+    transform: rotate(0deg);
+  }
+  .box_container{
+    transform: rotate(0deg);
+  }
+  .surfing_box{
+    transform: rotate(0deg);
+  }
+  .article_container{
+    transform: rotate(0deg);
+  }
+  .description_container{
+    transform: rotate(0deg);
+  }
+  .external_container{
+    transform: rotate(0deg);
+  }
+  .final_container{
+    transform: rotate(0deg);
+  }
+  .final_box{
+    margin-left: 5px;
+  }
   body{
     width: 100%;
     height: 100%;
@@ -595,14 +636,13 @@ li{
 
   .box_container{
     margin-top: 30px;
-    margin-left: 8%;
+    margin-left: 10%;
     display: flex;
     flex-wrap: wrap;
     width: 80%;
     height: 1500px;
   }
   .content_box{
-    margin-left: 25px;
     flex-basis: 100%;
     margin-top: 3%;
     height: 30%;
@@ -614,11 +654,17 @@ li{
     text-align: center;
     width: 50%;
   }
+  #cover_image_label{
+    font-size: 30pt
+  }
+  .divisor_label h2{
+    font-size: 20pt;
+  }
   #divisor_label_description, #divisor_label_channel{
     margin-top: 20px;
     margin-bottom: 20px;
-    margin-left: 2%;
     width: 100%;
+    margin-left: 0%;
   }
   #description_who{
     margin-top: 30px;
@@ -646,7 +692,6 @@ li{
   }
 
   .external_container{
-
     height: 150px;
     margin-top: 1px;
   }
@@ -654,23 +699,25 @@ li{
     height: 100px;
     width: 100px;
   }
-
   .external_box p{
     display: none;
   }
   #insta_big_box {
     background-image: url("icons/insta.png");
     background-repeat: no-repeat;
+    background-position: center;
 
   }
   #youtube_big_box {
     background-image: url("icons/youtube.png");
     background-repeat: no-repeat;
+    background-position: center;
   }
 
   #telegram_big_box {
     background-image: url("icons/telegram.png");
     background-repeat: no-repeat;
+    background-position: center;
   }
   #insta_big_box h2, #telegram_big_box h2, #youtube_big_box h2 {
     display: none;
@@ -679,24 +726,26 @@ li{
   .surfing_image{
     height: 120px;
     width: 120px;
+    border-radius: 5%;
   }
   .surfing_image_right{
     height: 120px;
     width: 120px;
+    border-radius: 5%;
   }
   .article_container{
     display: none;
   }
 
   .external_box h2{
-    font-size: 19px;
+    font-size: 16px;
   }
 
   .external_box button{
     border-radius: 30%;
   }
   #insta_big_box button, #youtube_big_box button,  #telegram_big_box button{
-    margin-top: 100%;
-    border-radius: 10%;
+    margin-top: 70%;
+    border-radius: 30%;
    }
 }
