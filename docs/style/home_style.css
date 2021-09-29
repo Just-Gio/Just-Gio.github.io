@@ -148,8 +148,6 @@ li{
 }
 
 #cover_image_img{
-  width: 100%;
-  height: 100%;
   position: absolute;
 }
 
@@ -178,7 +176,7 @@ li{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 26%;
+  margin-left: 30%;
   margin-top: 30px;
   border-style: none;
   border-color: none;
@@ -203,8 +201,6 @@ li{
 }
 
 .content_box{
-  margin-left: 25px;
-  margin-right: 25px;
   text-align: center;
   justify-content: center;
   border-style: solid;
@@ -396,26 +392,21 @@ li{
 #blog_image{
   background-image: url("images/blog.png");
   background-repeat: no-repeat;
-  justify-content: center;
-  border-style: solid;
-  height: 200px;
-  width: 200px;
+  
+  background-position: center;
 }
 #whoami_image{
   background-image: url("images/whois.png");
   background-repeat: no-repeat;
-  justify-content: center;
-  border-style: solid;
-  height: 200px;
-  width: 200px;
+  
+  background-position: center;
 }
 #link_image{
   background-image: url("images/link.png");
   background-repeat: no-repeat;
   
   background-position: center;
-  height: 200px;
-  width: 200px;
+
 }
 .article_container{
   transform: rotate(7deg);
@@ -582,8 +573,17 @@ li{
   transform: rotate(0deg);
 }
 
+@media  (min-width: 761px) {
+  #second_content{
+    margin-right: 25px;
+    margin-left: 25px;
+  }
+  
+}
+
 
 @media  (max-width: 760px) {
+  
   body{
     width: 100%;
     height: 100%;
@@ -602,6 +602,7 @@ li{
     height: 1500px;
   }
   .content_box{
+    margin-left: 25px;
     flex-basis: 100%;
     margin-top: 3%;
     height: 30%;
@@ -623,6 +624,27 @@ li{
     margin-top: 30px;
     margin-bottom: 30px;
   }
+
+  #blog_image{
+    background-image: url("images/blogSmall.png");
+    background-repeat: no-repeat;
+    
+    background-position: center;
+  }
+  #whoami_image{
+    background-image: url("images/whoisSmall.png");
+    background-repeat: no-repeat;
+    
+    background-position: center;
+  }
+  #link_image{
+    background-image: url("images/linkSmall.png");
+    background-repeat: no-repeat;
+    
+    background-position: center;
+  
+  }
+
   .external_container{
 
     height: 150px;
@@ -654,7 +676,14 @@ li{
     display: none;
   }
 
-
+  .surfing_image{
+    height: 120px;
+    width: 120px;
+  }
+  .surfing_image_right{
+    height: 120px;
+    width: 120px;
+  }
   .article_container{
     display: none;
   }
