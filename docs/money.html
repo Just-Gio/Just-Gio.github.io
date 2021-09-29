@@ -49,6 +49,10 @@
     </div>
   </div>
 
+<div class = "divisor_label rotateElement" id = "divisor_label_description"><b><h2>I'M SORRY. <br>NO ARTICLES IN THIS SECTION</h2></b> </div>
+
+<!--
+
   <div class = "divisor_label" id = "divisor_label_articles"><h2>Articles</h2> </div>
 
 
@@ -82,7 +86,7 @@
     </div>
   </div>
 
-
+-->
 
   <div class = "footer">
     <h6>Copyright 2021 - This site is interly realized by me -> JustG.io</h6>
@@ -97,7 +101,7 @@ var element;
 var animateDescriptionContainer = true;
 window.addEventListener("scroll", function() {
 
-  if(this.pageYOffset > 100){
+  if(this.pageYOffset >= 0 /*100*/){
     if(animateCoverImage) {
       element = document.querySelector(".cover_image");
       element.classList.add("rotateElement");
@@ -106,7 +110,7 @@ window.addEventListener("scroll", function() {
   }
 
 
-  if(this.pageYOffset > 120){
+  if(this.pageYOffset >= 0  /*100*/){
     if(animateDescriptionContainer) {
       document.querySelector(".description_container").classList.add("rotateElement");
       document.querySelector("#divisor_line_money").classList.add("rotateElement");

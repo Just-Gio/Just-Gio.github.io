@@ -54,13 +54,14 @@
     <div class = "big_article_image">
     </div>
     <div class = "big_article">
-      <h3>Article Title</h3>
-      <p>Descrizione di prova del blog. Qui potrei dire cosa scrivo nel blog e al fianco potrei inserire un'immagine stondata, poi qui sotto metto il link per andare sul blog!<p>
-      <button class = "article_button">read</button>
+      <h3>How I graduate in Computer Science</h3>
+      <p>The little story behind my Computer Science Degree.<p>
+     <a href="articles/graduating.html"><button class = "article_button"> Read </button></a>
     </div>
   </div>
 
-  <div class = "big_article_box">
+  <!--
+    <div class = "big_article_box">
     <div class = "big_article_left">
       <h3>Article Title</h3>
       <p>Descrizione di prova del blog. Qui potrei dire cosa scrivo nel blog e al fianco potrei inserire un'immagine stondata, poi qui sotto metto il link per andare sul blog!<p>
@@ -79,7 +80,7 @@
       <button class = "article_button">read</button>
     </div>
   </div>
-
+  -->
 
 
   <div class = "footer">
@@ -95,7 +96,7 @@ var element;
 var animateDescriptionContainer = true;
 window.addEventListener("scroll", function() {
 
-  if(this.pageYOffset > 100){
+  if(this.pageYOffset >= 0){
     if(animateCoverImage) {
       element = document.querySelector(".cover_image");
       element.classList.add("rotateElement");
@@ -103,8 +104,9 @@ window.addEventListener("scroll", function() {
     }
   }
 
+/*--change the 0-->*/
 
-  if(this.pageYOffset > 120){
+  if(this.pageYOffset >= 0){
     if(animateDescriptionContainer) {
       document.querySelector(".description_container").classList.add("rotateElement");
       document.querySelector("#divisor_line_money").classList.add("rotateElement");

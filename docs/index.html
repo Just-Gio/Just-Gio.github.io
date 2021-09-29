@@ -36,19 +36,19 @@
 
 
   <div class= "box_container">
-    <div class = "content_box" id = "first_content">
+    <div class = "content_box hidden" id = "first_content">
       <div class = "content_image_box"></div>
-      <p>Prova di una piccola descrizione di un aticolo o video appena pubblicato sul sito</p>
-      <button class = "content_button"> Watch </button>
+      <p><b>The little story behind my Computer Science Degree.</b></p>
+      <a href="articles/graduating.html"><button class = "content_button"> Read </button></a>
     </div>
 
     <div class = "content_box" id = "second_content">
       <div class = "content_image_box" ></div>
-      <p>Prova di una piccola descrizione di un aticolo o video appena pubblicato sul sito</p>
-      <button class = "content_button"> Watch </button>
+      <p><b>The little story behind my Computer Science Degree.</b></p>
+      <a href="articles/graduating.html"><button class = "content_button"> Read </button></a>
     </div>
 
-    <div class = "content_box">
+    <div class = "content_box hidden">
       <div class = "content_image_box" id = "third_content"></div>
       <p>Prova di una piccola descrizione di un aticolo o video appena pubblicato sul sito</p>
       <button class = "content_button"> Watch </button>
@@ -104,6 +104,14 @@
 
 
 <script>
+function removeElementsByClass(className){
+    const elements = document.getElementsByClassName(className);
+    while(elements.length > 0){
+        elements[0].parentNode.removeChild(elements[0]);
+    }
+}
+
+removeElementsByClass("hidden");
 var animateCoverImage = true;
 var animateBoxContainer = true;
 var animateSurfing = true;

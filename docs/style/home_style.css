@@ -5,6 +5,7 @@ body {
  width:95%;
 }
 
+
 h1{
   font-size: 35pt;
 }
@@ -175,6 +176,7 @@ li{
 .divisor_label{
   transform: rotate(7deg);
   display: flex;
+  color: rgb(33, 37,41);
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -184,7 +186,7 @@ li{
   border-width: none;
   width: 100%;
   height: 23px;
-  color: rgb(33, 37,41);
+  
 }
 
 .box_container{
@@ -572,7 +574,45 @@ li{
   transform: rotate(0deg);
 }
 
+.chapter{
+  align-items: center;
+  text-align: justify;
+  justify-content: center;
+}
+.chapter_shadow{
+  background-image: linear-gradient(90deg, rgba(33, 37, 41, 0.123) 0%, #9292921f 74%);
+  border-radius: 0.5%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  margin-left: 22.5%;
+  font-size: 15pt;
+  width: 55%;
+}
+.chapter p{
+  margin-left: 25%;
+  font-size: 15pt;
+  width: 50%;
+}
+#divisor_chapter{
+  margin-left: 10%;
+  margin-top: 15px;
+  width: 80%;
+  display: flex;
+  color: rgb(33, 37,41);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-style: none;
+}
+#divisor_chapter h2{
+  font-size: 20pt;
+}
 
+.hidden{
+  display: none;
+}
+.article_box h2{
+  font-size: 20pt;
+}
 @media  (min-width: 761px) {
   #second_content{
     margin-right: 25px;
@@ -581,8 +621,41 @@ li{
   
 }
 
+@media  (max-width: 1024px) {
+  .chapter_shadow{
+    background-image: linear-gradient(90deg, rgba(33, 37, 41, 0.123) 0%, #9292921f 74%);
+    border-radius: 0.5%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    margin-left: 5%;
+    font-size: 15pt;
+    width: 90%;
+  }
+  .chapter p{
+    margin-left: 7.5%;
+    font-size: 15pt;
+    width: 85%;
+  }
+}
 
 @media  (max-width: 760px) {
+  p{
+    word-spacing: -1.5px;
+  }
+  #divisor_chapter{
+    margin-left: 10%;
+    margin-top: 40px;
+    width: 80%;
+    display: flex;
+    color: rgb(33, 37,41);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-style: none;
+    font-size: 10pt;
+  }
+  #divisor_chapter h2{
+    font-size: 15pt;
+  }
   html{
     width: 95%;
   }
@@ -640,12 +713,12 @@ li{
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    height: 1500px;
+    height: 500px;
   }
   .content_box{
     flex-basis: 100%;
     margin-top: 3%;
-    height: 30%;
+    height: 95%;
   }
 
   .divisor_label{
@@ -702,6 +775,7 @@ li{
   .external_box p{
     display: none;
   }
+  
   #insta_big_box {
     background-image: url("icons/insta.png");
     background-repeat: no-repeat;
