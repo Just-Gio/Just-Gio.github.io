@@ -360,7 +360,6 @@ li{
   border-style: solid;
   border-width: none;
   border-color: rgb(33, 37,41);
-  background-color: none;
   border-radius: 40%;
 }
 
@@ -370,7 +369,6 @@ li{
   border-style: solid;
   border-width: none;
   border-color: rgb(33, 37,41);
-  background-color: none;
   border-radius: 40%;
 }
 
@@ -633,6 +631,14 @@ li{
   align-items: center;
   text-align: center;
 }
+
+
+#first_article{
+  background-image: url("images/graduating.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media  (min-width: 761px) {
   #second_content{
     margin-right: 25px;
