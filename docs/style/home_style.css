@@ -131,12 +131,6 @@ a{
   color:inherit;
 }
 
-li{
-  list-style-type: none;
-  margin: 0 15px 15px;
-  padding: 0;
-  display: inline;
-}
 
 .cover_image {
   transform: rotate(7deg);
@@ -637,6 +631,22 @@ li{
   background-image: url("images/graduating.png");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+ul{
+  margin-left: 20%;
+  font-size: 15pt;
+  width: 50%;
+}
+li{
+  list-style: square;
+  color:#000000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.article_pointed_list{
+  padding-left: 6%;
 }
 
 @media  (min-width: 761px) {
