@@ -230,6 +230,11 @@ a{
 
 }
 
+#first_image_box{
+  background-image: url("images/mkb.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 #middle_image_box{
   background-image: url("images/graduating.png");
   background-repeat: no-repeat;
@@ -238,6 +243,11 @@ a{
 
 #middle_life_box{
   background-image: url("images/graduating_shadow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#middle_tech_box{
+  background-image: url("images/mkb_shadow.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -649,6 +659,39 @@ li{
   padding-left: 6%;
 }
 
+.image_chapter_left{
+    margin-top: 8%;
+    margin-left: 25%;
+    height:10%;
+    width: 50%;
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgb(33, 37,41);
+    border-radius: 5%;
+}
+
+#layout_image{
+  background-image: url("images/layoutBig.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#mkb_image{
+  background-image: url("images/mkb.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#bt_image{
+  background-image: url("images/bt_or_not.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#tech_kb_image{
+    background-image: url("images/mkb.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
 @media  (min-width: 761px) {
   #second_content{
     margin-right: 25px;
@@ -674,6 +717,16 @@ li{
 }
 
 @media  (max-width: 760px) {
+  .image_chapter_left{
+    margin-top: 8%;
+    margin-left: 0;
+    height:25%;
+    width: 100%;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: rgb(33, 37,41);
+    border-radius: 5%;
+}
 
   p{
     word-spacing: -1.5px;
@@ -750,8 +803,10 @@ li{
     display: flex;
     flex-wrap: wrap;
     width: 80%;
-    height: 500px;
+    height: 400px;
+    margin-bottom: 400px;
   }
+
   .content_box{
     flex-basis: 100%;
     margin-top: 3%;
@@ -770,7 +825,7 @@ li{
   .divisor_label h2{
     font-size: 20pt;
   }
-  #divisor_label_description, #divisor_label_channel{
+  #divisor_label_description, #divisor_label_channel, #divisor_label_surfing{
     margin-top: 40px;
     margin-bottom: 40px;
     width: 100%;

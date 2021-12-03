@@ -38,11 +38,11 @@
 
 
   <div class= "box_container">
-    <!--<div class = "content_box  hidden">
-      <div class = "content_image_box"></div>
-      <p><b>The little story behind my Computer Science Degree.</b></p>
-      <a href="articles/graduating.html"><button class = "content_button"> Read </button></a>
-    </div>-->
+    <div class = "content_box">
+      <div class = "content_image_box"  id = "first_image_box"></div>
+      <p><b>A little guide for Dummies.</b></p>
+      <a href="articles/mkb-for-programming.html"><button class = "content_button"> Read </button></a>
+    </div>
 
     <div class = "content_box" id = "second_content">
       <div class = "content_image_box"  id = "middle_image_box" ></div>
@@ -79,25 +79,26 @@
   -->
 
   <div class = "divisor_label" id = "divisor_label_tech"><a class="categories_button" href = "tech.html">Tech</a></div>
-<!--
+
   <div class = "article_container" id = "tech_container">
-    <div class = "article_box hidden">
+    <!--<div class = "article_box hidden">
       <h2>Article Title</h2>
       <p>piccola descrizione dell'articolo.</p>
       <button class = "article_button">read</button>
+    </div> -->
+    <div class = "article_box" id = "middle_tech_box">
+      <h2>Mkb for Coding</h2>
+      <p>A little guide for Dummies.</p>
+      <a href="articles/mkb-for-programming.html"><button class = "article_button"> Read </button></a>
     </div>
-    <div class = "article_box">
+    <!--<div class = "article_box hidden">
       <h2>Article Title</h2>
       <p>piccola descrizione dell'articolo.</p>
       <button class = "article_button">read</button>
-    </div>
-    <div class = "article_box hidden">
-      <h2>Article Title</h2>
-      <p>piccola descrizione dell'articolo.</p>
-      <button class = "article_button">read</button>
-    </div>
+    </div> -->
+
+    
   </div>
--->
 
 
   <div class = "divisor_label" id = "divisor_label_fitness"><a class="categories_button" href = "fitness.html">Fitness</a> </div>
@@ -214,7 +215,7 @@ window.addEventListener("scroll", function() {
     if(this.pageYOffset > 0){
       if(animateTech) {
         document.querySelector("#divisor_label_tech").classList.add("rotateElement");
-     //   document.querySelector("#tech_container").classList.add("rotateElement");
+        document.querySelector("#tech_container").classList.add("rotateElement");
         animateTech = false;
       }
     }
