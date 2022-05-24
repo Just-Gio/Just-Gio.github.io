@@ -244,6 +244,7 @@ a{
   background-image: url("images/fail.png");
   background-repeat: no-repeat;
   background-position: center;
+  
 }
 #first_life_box{
   background-image: url("images/fail_shadow.png");
@@ -826,6 +827,12 @@ li{
   .divisor_label{
     transform: rotate(0deg);
   }
+  #divisor_label_money{
+    margin-top: 800px;
+  }
+  #divisor_label_surfing_blog{
+    margin-top: 80px;
+  }
   .box_container{
     transform: rotate(0deg);
   }
@@ -885,10 +892,13 @@ li{
     font-size: 20pt;
   }
   #divisor_label_description, #divisor_label_channel, #divisor_label_surfing{
-    margin-top: 40px;
+    margin-top: 100px;
     margin-bottom: 40px;
     width: 100%;
     margin-left: 0%;
+  }
+  #divisor_label_surfing_index{
+    margin-top: 800px;
   }
   #description_who{
     margin-top: 30px;
