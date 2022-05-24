@@ -240,9 +240,24 @@ a{
   background-repeat: no-repeat;
   background-position: center;
 }
+#third_image_box{
+  background-image: url("images/fail.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#first_life_box{
+  background-image: url("images/fail_shadow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 #middle_life_box{
   background-image: url("images/graduating_shadow.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#third_life_box{
+  background-image: url("images/fail_shadow.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -643,6 +658,13 @@ a{
   background-position: center;
 }
 
+#second_article{
+  background-image: url("images/fail.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 ul{
   margin-left: 20%;
   font-size: 15pt;
@@ -658,9 +680,17 @@ li{
 .article_pointed_list{
   padding-left: 6%;
 }
-
+.pointed_list{
+  padding-left: 6%;
+}
+.pointed_list_li{
+  padding-left: 5%;
+  color:#000000;
+  font-style: normal;
+  font-weight: normal;
+}
 .image_chapter_left{
-    margin-top: 8%;
+    margin-top: 2%;
     margin-left: 25%;
     height:10%;
     width: 50%;
@@ -681,7 +711,36 @@ li{
   background-repeat: no-repeat;
   background-position: center;
 }
-
+#fail_image{
+  height:100pt;
+  background-image: url("images/fail.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#fly_image{
+  height:100pt;
+  background-image: url("images/Fly.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#routine_image{
+  height:100pt;
+  background-image: url("images/routine.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#problems_image{
+  height:100pt;
+  background-image: url("images/othre_route_problems.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#goals_image{
+  height:100pt;
+  background-image: url("images/goals.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 #bt_image{
   background-image: url("images/bt_or_not.png");
   background-repeat: no-repeat;
