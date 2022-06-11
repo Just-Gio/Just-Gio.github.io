@@ -230,8 +230,13 @@ a{
 
 }
 
-#first_image_box{
-  background-image: url("images/mkb.png");
+#first_image_box_blog{
+  background-image: url("images/restart.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#first_image_box_home{
+  background-image: url("images/restart.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -258,7 +263,7 @@ a{
   background-position: center;
 }
 #third_life_box{
-  background-image: url("images/fail_shadow.png");
+  background-image: url("images/restart.png");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -659,6 +664,12 @@ a{
   background-position: center;
 }
 
+#third_life_article{
+  background-image: url("images/restart.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 #second_article{
   background-image: url("images/fail.png");
   background-repeat: no-repeat;
@@ -715,6 +726,24 @@ li{
 #fail_image{
   height:100pt;
   background-image: url("images/fail.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#restart_image{
+  height:100pt;
+  background-image: url("images/restart.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#serious_image{
+  height:100pt;
+  background-image: url("images/serious.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+#cinematic_image{
+  height:100pt;
+  background-image: url("images/cinematic.png");
   background-repeat: no-repeat;
   background-position: center;
 }
