@@ -241,12 +241,12 @@ a{
   background-position: center;
 }
 #middle_image_box{
-  background-image: url("images/graduating.png");
+  background-image: url("images/fail.png");
   background-repeat: no-repeat;
   background-position: center;
 }
 #third_image_box{
-  background-image: url("images/fail.png");
+  background-image: url("images/nike/swoosh.png");
   background-repeat: no-repeat;
   background-position: center;
   
@@ -272,6 +272,13 @@ a{
   background-repeat: no-repeat;
   background-position: center;
 }
+
+#middle_money_box{
+  background-image: url("images/nike/swoosh.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .content_button{
   display: inline-flex;
   align-items: center;
@@ -524,6 +531,7 @@ a{
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
+
 .final_container{
   transform: rotate(7deg);
   margin-top: 15px;
@@ -676,6 +684,11 @@ a{
   background-position: center;
 }
 
+#money_mid_article_image{
+  background-image: url("images/nike/swoosh.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
 ul{
   margin-left: 20%;
@@ -781,6 +794,49 @@ li{
     background-repeat: no-repeat;
     background-position: center;
 }
+
+#swoosh_image{
+  height:100pt;
+  background-image: url("images/nike/swoosh.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#fischio_image{
+  height:100pt;
+  background-image: url("images/nike/fischio.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#crazy_ideas_image{
+  height:100pt;
+  background-image: url("images/nike/crazy_ideas.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#risks_image{
+  height:100pt;
+  background-image: url("images/nike/risks.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#stop_image{
+  height:100pt;
+  background-image: url("images/nike/stop.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#i_will_image{
+  height:100pt;
+  background-image: url("images/nike/i_will.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @media  (min-width: 761px) {
   #second_content{
     margin-right: 25px;
